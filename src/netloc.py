@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright (c) 2014 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -10,21 +11,19 @@
 
 """List, filter and activate network locations from within Alfred."""
 
-from __future__ import print_function
 
 import argparse
-from collections import namedtuple
 import re
 import sys
+from collections import namedtuple
 
-
-from workflow import Workflow3, ICON_NETWORK, ICON_WARNING
+from workflow import ICON_NETWORK, ICON_WARNING, Workflow
 from workflow.util import run_command
 
-HELP_URL = 'https://github.com/deanishe/alfred-network-location/issues'
+HELP_URL = 'https://github.com/harrtho/alfred-network-location/issues'
 ICON_UPDATE = 'update.png'
 UPDATE_SETTINGS = {
-    'github_slug': 'deanishe/alfred-network-location'
+    'github_slug': 'harrtho/alfred-network-location'
 }
 
 
@@ -60,7 +59,7 @@ def do_list_locations(query=None):
     """Display list of available locations in Alfred."""
     if not query and wf.update_available:  # show update
         wf.add_item('An Update is Available',
-                    u'↩ or ⇥ to install',
+                    '↩ or ⇥ to install',
                     valid=False,
                     autocomplete='workflow:update',
                     icon=ICON_UPDATE)
@@ -73,13 +72,13 @@ def do_list_locations(query=None):
     for loc in locations:
 
         if loc.current:
-            title = loc.name + u' (active)'
-            subtitle = u'This location is currently active'
+            title = loc.name + ' (active)'
+            subtitle = 'This location is currently active'
             valid = False
 
         else:
             title = loc.name
-            subtitle = u'Switch to this location'
+            subtitle = 'Switch to this location'
             valid = True
 
         wf.add_item(title, subtitle, valid=valid, arg=loc.id,
@@ -112,7 +111,7 @@ def main(wf):
 
 
 if __name__ == '__main__':
-    wf = Workflow3(
+    wf = Workflow(
         help_url=HELP_URL,
         update_settings=UPDATE_SETTINGS,
     )
