@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.deanishe.alfred-network-location</string>
-	<key>category</key>
-	<string>System</string>
+	<string>de.xdevcloud.alfred-network-location</string>
 	<key>connections</key>
 	<dict>
 		<key>924B1653-1A8D-4D88-B618-8D972A2C93B4</key>
@@ -46,7 +44,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Dean Jackson</string>
+	<string>Thomas Harr</string>
 	<key>description</key>
 	<string>Change your network location</string>
 	<key>disabled</key>
@@ -211,8 +209,8 @@ end tell</string>
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>version</key>
-	<string>2.0</string>
+	<string>3.0.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/deanishe/alfred-network-location</string>
+	<string>https://github.com/harrtho/alfred-network-location</string>
 </dict>
 </plist>
