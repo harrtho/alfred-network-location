@@ -102,7 +102,7 @@
 				<key>runningsubtext</key>
 				<string>Loading locations…</string>
 				<key>script</key>
-				<string>/usr/local/bin/python3 netloc.py list "$1"</string>
+				<string>/usr/bin/env python3 netloc.py list "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -131,7 +131,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/python3 netloc.py set "$1"</string>
+				<string>/usr/bin/env python3 netloc.py set "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -209,7 +209,7 @@ end tell</string>
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>version</key>
-	<string>3.0.0</string>
+	<string>3.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/harrtho/alfred-network-location</string>
 </dict>
