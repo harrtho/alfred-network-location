@@ -1,5 +1,8 @@
 # Network Location workflow for Alfred
 
+[![GitHub Version][version-shield]][releases]
+[![GitHub All Releases][downloads-shield]][releases]
+[![GitHub][license-shield]][mit-license]
 
 View and change your network location from [Alfred][alfred].
 
@@ -31,8 +34,12 @@ This workflow is released under the [MIT License][mit-license].
   - Initial release
 
 [alfred]: https://www.alfredapp.com/
+[downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-resolve-url/total.svg
+[license-shield]: https://img.shields.io/github/license/harrtho/alfred-resolve-url.svg
 [mit-license]: https://opensource.org/licenses/MIT
 [releases]: https://github.com/deanishe/alfred-network-location/releases
+[releases]: https://github.com/harrtho/alfred-resolve-url/releases
 [screenshot]: https://raw.githubusercontent.com/deanishe/alfred-network-location/master/screenshot.png
 [v1.0]: https://github.com/deanishe/alfred-network-location/releases/tag/v1.0
 [v2.0]: https://github.com/deanishe/alfred-network-location/releases/tag/v2.0
+[version-shield]: https://img.shields.io/github/release/harrtho/alfred-resolve-url.svg
