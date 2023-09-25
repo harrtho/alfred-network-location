@@ -1,34 +1,50 @@
-# Network Location workflow for Alfred
+# Network Location Alfred Workflow
 
-[![GitHub Version][version-shield]][releases]
-[![GitHub All Releases][downloads-shield]][releases]
-[![GitHub][license-shield]][mit-license]
+[![GitHub Version][shield-version]][gh-releases]
+[![GitHub All Releases][shield-downloads]][gh-releases]
+[![GitHub][shield-license]][license-mit]
 
 View and change your network location from [Alfred][alfred].
 
-![][screenshot]
+![][preview]
 
-## Installation
+## Download & Installation
 
-Grab the latest version from the [releases page][releases].
-
-**Note:** If you're still using Alfred 2, download [v1.0][v1.0]. Later versions are only compatible with Alfred 3.
+Download the [latest workflow release][gh-latest-release] from GitHub. Open the workflow file to install
+in Alfred.
 
 ## Usage
 
 - `netloc [<query>]` — Show list of network locations filtered by `<query>` if one is specified
   - `↩` — Activate selected network location
-  - `⌘+↩` — Open Network Preferences
+  - `⌘ + ↩` — Open Network Preferences
+
+## Bug Reports and Feature Requests
+
+Please use [GitHub issues][gh-issues] to report bugs or request features.
+
+## Contributors
+
+This Alfred Workflow comes from the [abandoned Workflow][abandoned-workflow] of
+[Dean Jackson][deanishe]
 
 ## License
 
-This workflow is released under the [MIT License][mit-license].
+Network Location Alfred Workflow is licensed under the [MIT License][license-mit]
 
+The workflow uses the following libraries:
+
+- [Alfred-PyWorkflow][alfred-pyworkflow] ([MIT License][license-mit])
+
+[abandoned-workflow]: https://github.com/deanishe/alfred-network-location
+[alfred-pyworkflow]: https://xdevcloud.de/alfred-pyworkflow/
 [alfred]: https://www.alfredapp.com/
-[downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-resolve-url/total.svg
-[license-shield]: https://img.shields.io/github/license/harrtho/alfred-resolve-url.svg
-[mit-license]: https://opensource.org/licenses/MIT
-[releases]: https://github.com/deanishe/alfred-network-location/releases
-[releases]: https://github.com/harrtho/alfred-resolve-url/releases
-[screenshot]: https://raw.githubusercontent.com/deanishe/alfred-network-location/master/screenshot.png
-[version-shield]: https://img.shields.io/github/release/harrtho/alfred-resolve-url.svg
+[deanishe]: https://github.com/deanishe
+[gh-issues]: https://github.com/harrtho/alfred-network-location/issues
+[gh-latest-release]: https://github.com/harrtho/alfred-network-location/releases/latest
+[gh-releases]: https://github.com/harrtho/alfred-network-location/releases
+[license-mit]: https://opensource.org/licenses/MIT
+[preview]: img/preview.png
+[shield-downloads]: https://img.shields.io/github/downloads/harrtho/alfred-network-location/total.svg
+[shield-license]: https://img.shields.io/github/license/harrtho/alfred-network-location.svg
+[shield-version]: https://img.shields.io/github/release/harrtho/alfred-network-location.svg
